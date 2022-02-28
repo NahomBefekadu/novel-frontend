@@ -1,17 +1,21 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Hero from "./components/hero/Hero";
+import Home from "./components/home/Home";
+import Favorites from "./components/favorites/Favorites";
+import Personal from "./components/personal/Personal";
+import Login from "./components/login/Login";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Login />}></Route>
+          <Route path="/" element={<Hero />}></Route>
           <Route path="/home" element={<Home />}></Route>
-          <Route path="/favorites" element={<About />}></Route>
-          <Route path="/myBooks" element={<Projects />}></Route>
-          <Route path="/login" element={<Skills />}></Route>
+          <Route path="/favorites" element={<Favorites />}></Route>
+          <Route path="/myBooks" element={<Personal />}></Route>
+          <Route path="/login" element={<Login />}></Route>
         </Routes>
       </div>
     </BrowserRouter>

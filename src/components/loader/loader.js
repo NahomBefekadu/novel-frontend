@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function loader() {
+export default function Loader() {
   return (
     <div className="loader">
       <div className="loader_container"></div>

@@ -1,0 +1,13 @@
+.hero {
+}
+.hero_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.hero_container_text {
+  width: 666px;
+}
+.hero_img {
+  width: 666px;
+  object-fit: contain;
+}
