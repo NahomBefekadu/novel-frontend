@@ -1,19 +1,24 @@
 import React from "react";
-import "./Login.css";
-import { Link } from "react-router-dom";
+import "./Register.css";
 import Header from "../header/Header";
 
-export default function Login() {
+export default function Register() {
   return (
-    <div className="login">
+    <div className="register">
       <Header />
       <div className="login_container">
         <div className="login_statements">
-          <h1>login</h1>
-          <h5>Create your own stories and adventure!!</h5>
+          <h1>Register</h1>
+          <h5>Join our community and save your favorite stories!!</h5>
         </div>
         <div className="login_forms">
           <form className="form Login-form">
+            <div className="form-row">
+              <label for="price" className="form-label">
+                Username
+              </label>
+              <input type="text" id="username" className="form-input" />
+            </div>
             <div className="form-row">
               <label for="name" className="form-label">
                 Email
@@ -29,12 +34,9 @@ export default function Login() {
             </div>
 
             <div className="form-row">
-              <button type="submit" className="btn btn-block">
-                Login
+              <button type="button" className="btn btn-block">
+                Register
               </button>
-            </div>
-            <div className="btn-row">
-              <Link to="/register">Register</Link>
             </div>
           </form>
         </div>

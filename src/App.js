@@ -5,6 +5,7 @@ import Home from "./components/home/Home";
 import Favorites from "./components/favorites/Favorites";
 import Personal from "./components/personal/Personal";
 import Login from "./components/login/Login";
+import Register from "./components/register/Register";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/favorites" element={<Favorites />}></Route>
           <Route path="/myBooks" element={<Personal />}></Route>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/register" element={<Register />}></Route>
         </Routes>
       </div>
     </BrowserRouter>

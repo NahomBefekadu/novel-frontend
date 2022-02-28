@@ -11,10 +11,11 @@
   --white: #ffffffff;
   --tart-orange: #ff4242ff;
   --old-rose: #c78283ff;
+  --faded: #ffffff10;
 
   --mainFont: "Bellefair", serif;
   --smallText: 0.7em;
-
+  --spacing: 1px;
   --transition: 0.3s ease-in-out all;
 }
 
