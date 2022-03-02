@@ -12,7 +12,12 @@
   --tart-orange: #ff4242ff;
   --old-rose: #c78283ff;
   --faded: #ffffff10;
-
+  --card: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(45, 6, 6, 0.781) 55%,
+    rgba(252, 176, 69, 0.21612394957983194) 100%
+  );
   --mainFont: "Bellefair", serif;
   --smallText: 0.7em;
   --spacing: 1px;

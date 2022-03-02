@@ -1,0 +1,55 @@
+.personal_container2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.personal_img {
+  width: 300px;
+  object-fit: contain;
+}
+
+.personal_container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}
+.personal_main {
+  grid-column: 1/5;
+  grid-row: 1/12;
+  margin-left: 4rem;
+}
+.personal_secondary {
+  grid-column: 5/12;
+  grid-row: 1/12;
+}
+.personal_novels_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: flex-start;
+}
+.personal_form {
+  display: none;
+}
+.personal_novels {
+  display: none;
+}
+
+.frms {
+  display: block;
+}
+.btn-block {
+  margin: 0 2em;
+}
+.personal_main_ctrls > .card_btn {
+  font-size: 1em;
+  padding: 1em 2em;
+  color: var(--white);
+  border-radius: 4px;
+  background-color: var(--tart-orange);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 25px var(--old-rose);
+  margin: 0 1em;
+}

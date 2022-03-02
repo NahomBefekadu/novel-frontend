@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 import { links } from "../../utility/helper";
 export default function Header() {
   const openSidebar = () => {};
-
+  const logout = () => {
+    console.log("logged out");
+    localStorage.removeItem("userID");
+    localStorage.removeItem("userName");
+    window.location.reload(false);
+  };
   return (
     <div className="header">
       <div className="header_container">
@@ -27,6 +32,11 @@ export default function Header() {
               </li>
             );
           })}
+          <li>
+            <a href="#" className="exit" onClick={logout}>
+              Logout
+            </a>
+          </li>
         </ul>
       </div>
     </div>

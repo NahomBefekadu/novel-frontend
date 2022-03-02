@@ -1,0 +1,17 @@
+.favorites_novels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: flex-start;
+  margin: 3rem;
+}
+.favorites_container2 {
+  display: flex;
+  justify-content: center;
+}
+.favorites_container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

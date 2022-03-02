@@ -1,0 +1,51 @@
+.novel_card {
+  color: var(--white);
+  background-image: url("/public/image/LN_Vol_1_ENG.jpg");
+  background-size: cover;
+  padding: 14rem 0 0;
+  max-width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: var(--transition);
+}
+.card_content > p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 50ch;
+  height: auto;
+}
+.novel_card:hover {
+  transform: scale(1.05);
+  padding: 6rem 0 0;
+}
+.novel_card:hover .card_content {
+  background: var(--card);
+}
+.card_content {
+  padding: 1.5em;
+  background: var(--card);
+  transition: var(--transition);
+}
+
+.card_btn {
+  font-size: 0.81em;
+  padding: 0.2em 0.3em;
+  color: var(--white);
+  border-radius: 4px;
+  background-color: var(--tart-orange);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 25px var(--old-rose);
+  margin: 1em 1em 4em;
+}
+
+.card_title {
+  font-size: 1.5em;
+  margin-bottom: 0.1em;
+}
+.card_author {
+  font-size: 1em;
+  margin-bottom: 0.1em;
+}

@@ -1,0 +1,20 @@
+.home_container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}
+.home_search {
+  grid-column: 1/3;
+  grid-row: 1/12;
+  margin-left: 4rem;
+}
+.home_novels {
+  grid-column: 3/12;
+  grid-row: 1/12;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: flex-start;
+}
